@@ -1,0 +1,14 @@
+.navbar-default {
+    /* background-color: #3c6aa1; */
+    /* background: -webkit-gradient(linear,100% 50%,0% 50%,color-stop(0%,#4d80af),color-stop(100%,#2b5593)); */
+    background-image: -webkit-linear-gradient(top, rgb(77, 128, 175) 0px, rgb(43, 85, 147) 100%);
+    background: -moz-linear-gradient(top,#4d80af 0,#2b5593 100%);
+    background: -o-linear-gradient(top,#4d80af 0,#2b5593 100%);
+    background: linear-gradient(top,#4d80af 0,#2b5593 100%);
+    background: -ms-linear-gradient(top,#4d80af 0,#2b5593 100%);
+    font-size: 14px;
+}
+
+.navbar-default .nav-link-c {
+    color: #ffffff;
+}

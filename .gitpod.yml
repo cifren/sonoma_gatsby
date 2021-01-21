@@ -2,5 +2,6 @@ ports:
 - port: 8000
   onOpen: open-preview
 tasks:
-- init: npm install
+- before: npm install -g gatsby-cli
+  init: npm install
   command: npm run develop
