@@ -6,9 +6,8 @@ import Img from "gatsby-image"
 const Navigation = () => {
   const data = useStaticQuery(graphql`
     {
-      file(
-        sourceInstanceName: { eq: "images" }
-        relativePath: { eq: "avatar.jpg" }
+      allFiles(
+        sourceInstanceName: { eq: "images/carousel" }
       ) {
         childImageSharp {
           fixed(width: 30, height: 30) {

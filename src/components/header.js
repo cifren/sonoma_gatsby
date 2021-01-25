@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React, {useState} from "react"
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap'
 import Logo from "./images/logo"
+import { navigateTo } from "gatsby"
 
 const Header = function({ siteTitle }) {
     
@@ -16,6 +17,9 @@ const Header = function({ siteTitle }) {
     const goToLink = e => {
         setShow(false);
     }
+    const navigateToThere = () => {
+        navigateTo('/page-2/');
+    }
 
     return <div class="navbar-default">
         <Container className="navbar-default">
@@ -29,14 +33,16 @@ const Header = function({ siteTitle }) {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <NavDropdown 
-                        title="Company" id="basic-nav-dropdown"
-                        onClick={goToLink}
+                        id="basic-nav-dropdown"
+                        title="Company"
+                        onClick={navigateToThere}
                         show={show}
                         onMouseEnter={showDropdown} 
                         onMouseLeave={hideDropdown}>
                         <NavDropdown.Item href="#action/1.1">Management</NavDropdown.Item>
                         <NavDropdown.Item href="#action/1.2">Careers</NavDropdown.Item>
                     </NavDropdown>
+
                     <NavDropdown title="Services">
                         <NavDropdown.Item href="#action/2.1">Financial Services</NavDropdown.Item>
                         <NavDropdown.Item href="#action/2.2">Online Banking</NavDropdown.Item>
