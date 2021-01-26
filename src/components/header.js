@@ -7,16 +7,14 @@ import { navigateTo } from "gatsby"
 const Header = function({ siteTitle }) {
     
     const [show, setShow] = useState(false);
-    const showDropdown = (e)=>{
+    const showDropdown = ()=>{
         setShow(!show);
     }
 
-    const hideDropdown = e => {
+    const hideDropdown = () => {
         setShow(false);
     }
-    const goToLink = e => {
-        setShow(false);
-    }
+    
     const navigateToThere = () => {
         navigateTo('/page-2/');
     }
