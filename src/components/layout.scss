@@ -32,6 +32,11 @@ $hr-border-width: 3px;
 $hr-border-color: black;
 $font-weight-bolder: bold;
 $font-size-base: 13;
+$font-family-base: Verdana, Arial, Helvetica, sans-serif;
+
+$theme-colors: (
+  "primary": #428bca
+);
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus,
@@ -73,13 +78,96 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
 
-.carousel-control.next {
+.carousel-control-next {
     left: auto;
     right: 0;
     background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.caption1, .caption2, .caption3 {
+    left: 53px !important;
+    right: auto !important;
+    width: 370px !important;
+    text-align: left !important;
+    top: 60px !important;
+}
+
+.caption1 p, .caption2 p, .caption3 p {
+    font-size: 18px;
+    text-shadow: none;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+
+.caption1 h1 {
+    color: #444;
+    text-shadow: none;
+}
+
+.caption1 p {
+    color: #444;
+}
+
+.carousel-caption .btn {
+    margin-top: 36px;
+}
+
+.carousel-indicators li {
+    margin-right: 0 !important;
+    padding: 0 !important;
+    background-color: #919191 !important;
+    border: 1px solid black !important;
+    border-radius: 0;
+    height: 10px !important;
+    width: 56px !important;
+}
+
+.carousel-indicators li.active {
+    background-color: #005da3 !important;
+}
+
+.home-links {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    box-shadow: 0 11px 7px -10px rgb(0 0 0 / 10%) inset, 0 7px 10px -5px rgb(0 0 0 / 10%);
+    background-color: #f8f8f8;
+    margin-top: 14px;
+}
+.home-links a {
+    color: black;
+    text-decoration: none;
+}
+
+.home-links img {
+    margin-bottom: 15px;
+}
+
+.home-links h1 a {
+    color: #990000;
+}
+
+.home-links .text{
+    margin-left: 156px;
+}
+
+.home-links .text h1{
+    font-size: 11pt;
+}
+
+.home-links .text p {
+    text-align: left; 
+    color: black;
+}
+
+.home-icone {
+    margin: 15px;
+}
+
+.pull-left {
+    float: left;
 }
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
