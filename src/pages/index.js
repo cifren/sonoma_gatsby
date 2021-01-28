@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import Image from "../components/images/image"
 import SEO from "../components/seo"
 import { Container, Carousel, Row, Col } from "react-bootstrap"
 
@@ -15,7 +14,7 @@ const IndexPage = function(props){
     const carouselIcon = React.createElement("span");
 
     return <Layout>
-        <SEO title="Home" />
+        <SEO title="Home"/>
         <Container>
             <br/>
             <Row>
@@ -54,7 +53,7 @@ const IndexPage = function(props){
                             <Carousel.Caption className="caption3">
                                 <h1 class="carousel-title">Contact Us Today</h1>
                                 <p class="carousel-body"> For further information</p>
-                                <p><Link class="btn btn-lg btn-primary" to="" role="button">Click Here</Link></p>
+                                <p><Link class="btn btn-lg btn-primary" to="/contact" role="button">Click Here</Link></p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
@@ -65,7 +64,7 @@ const IndexPage = function(props){
                     <Row>
                         <Col> 
                             <div class="home-icone">
-                                <Link href="/company" rel="alternate">
+                                <Link to="/contact" rel="alternate">
                                     <img class="pull-left" src={img1} alt="" width="129" height="129"/>
                                 </Link>
                             </div>
@@ -103,7 +102,7 @@ const IndexPage = function(props){
                     <Row>
                         <Col class="col-sm-12 col-md-12">
                             <div class="home-icone">
-                                <Link href="/services/pos-point-of-sale" rel="alternate">
+                                <Link to="/services/pos-point-of-sale" rel="alternate">
                                     <img class="pull-left magrgin-bottom" src={img3} alt="" width="129" height="129"/>
                                 </Link>
                             </div>
@@ -122,16 +121,6 @@ const IndexPage = function(props){
                 </Col>
             </Row>
         </Container>
-
-        <h1>Hi people</h1>
-        <p> bonjoiru caro</p>
-        <p>Now go build something great.</p>
-        <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image src="gatsby-astronaut.png" />
-        </div>
-        <Link to="/blog/my-first-post">Go to page 2</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-        <Link to="/blog/my-first-post">Go to "markdown blog"</Link>
     </Layout>
 }
 
