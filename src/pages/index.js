@@ -11,8 +11,6 @@ import img2 from "../images/building.jpg"
 import img3 from "../images/POS.jpeg"
 
 const IndexPage = function(props){
-    const carouselIcon = React.createElement("span");
-
     return <Layout>
         <SEO title="Home"/>
         <Container>
@@ -20,8 +18,8 @@ const IndexPage = function(props){
             <Row>
                 <Col>
                     <Carousel 
-                        prevIcon={carouselIcon}
-                        nextIcon={carouselIcon}
+                        prevIcon={React.createElement("span")}
+                        nextIcon={React.createElement("span")}
                         >
                         <Carousel.Item>
                             <Img 

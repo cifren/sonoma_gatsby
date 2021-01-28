@@ -17,33 +17,33 @@ const Header = function({ siteTitle }) {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <LocalDropdown title="Company" to="/company/">    
+                    <LocalDropdown title="Company" to="/company/">
                         <Dropdown.Item as={Link} to="/company/management">Management</Dropdown.Item>
                         <Dropdown.Item as={Link} to="/company/careers">Careers</Dropdown.Item>
                     </LocalDropdown>
 
                     <LocalDropdown 
                         title="Services" to="/services/">
-                        <Dropdown.Item as={Link} to="/services/financialServices">Financial Services</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/onlineBanking">Online Banking</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/conversionSupport">Conversion Support</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/lostOrStolenDebitCard">Lost or Stolen Debit Card</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/atmSupportServices">ATM Support Services</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/financial-services">Financial Services</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/financial-services/online-banking">Online Banking</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/financial-services/conversion-support">Conversion Support</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/financial-services/lost-or-stolen-debit-card">Lost or Stolen Debit Card</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/financial-services/atm-support-services">ATM Support Services</Dropdown.Item>
                         <Dropdown.Divider />
-                        <Dropdown.Item as={Link} to="/services/pos">POS (Point of Sale)</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/customerSupport">Customer Support</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/trainingServices">Training Services</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/conversions">Conversions</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/supplyManagement">Supply Management</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale">POS (Point of Sale)</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale/customer-support">Customer Support</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale/training-services">Training Services</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale/conversions">Conversions</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale/supply-management">Supply Management</Dropdown.Item>
                     </LocalDropdown>
                     <LocalDropdown 
                         title="Technology" to="/technology/">
-                        <Dropdown.Item as={Link} to="/technology/crmCustomerRelationshipManagement">CRM Customer Relationship Management</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/technology/troubleTicketingSystem">Trouble Ticketing System</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/technology/knowledgeBase">Knowledge Base</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/technology/callRouting">Call Routing</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/technology/crm-customer-relationship-management">CRM Customer Relationship Management</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/technology/trouble-ticketing-system">Trouble Ticketing System</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/technology/knowledge-base">Knowledge Base</Dropdown.Item>
+                        <Dropdown.Item as={Link} to="/technology/call-routing">Call Routing</Dropdown.Item>
                     </LocalDropdown>
-                    <Nav.Link to="/contact" as={Link}>Contact</Nav.Link>
+                    <Nav.Link to="/contact-us" as={Link}>Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>

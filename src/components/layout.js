@@ -6,8 +6,9 @@ import Footer from "./footer"
 import Header from "./header"
 import "./layout.scss"
 import { Container, Row, Col } from "react-bootstrap"
+import SidebarComponents from "./sidebar/sidebarComponents"
 
-const Layout = ({ children, sidebar }) => {
+const Layout = ({ children, sidebarName }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -18,29 +19,28 @@ const Layout = ({ children, sidebar }) => {
     }
   `)
 
+  const Sidebar = SidebarComponents[sidebarName]
+
   return (
     <>
         <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <div
-            style={{
-            margin: `0 auto`,
-            padding: `0 1.0875rem 1.45rem`,
-            }}
-        >
             <main>
                 <Container>
-                    <Row>
-                        <Col className="mt-4">{children}</Col>
-                        
-                        {sidebar &&
-                            <Col>
-                                sidebar
+                    {Sidebar &&
+                        <Row>
+                            <Col xs={12} sm={8} md={9} className="mt-4 mb-4">{children}</Col>
+                            <Col xs={12} sm={4} md={3} className="sidebar mb-5">
+                                <Sidebar/>
                             </Col>
-                        }
-                    </Row>
+                        </Row>
+                    }
+                    {!Sidebar &&
+                        <Row>
+                            <Col className="mt-4 mb-4">{children}</Col>
+                        </Row>
+                    }
                 </Container>
             </main>
-        </div>
         <Footer />
     </>
   )

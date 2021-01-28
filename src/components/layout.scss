@@ -173,12 +173,22 @@ body {
 }
 
 main {
-    a {
-        color: #990000;
+    .content {
+        a {
+            color: #990000;
+        }
+
+        h1 {
+            color: #990000;
+        }
     }
 
-    h1 {
-        color: #990000;
+    .sidebar {
+        background-color: #D0D0D0;
+        
+        a {
+            color: #990000;
+        }
     }
 }
 
