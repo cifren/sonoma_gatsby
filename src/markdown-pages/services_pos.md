@@ -3,6 +3,7 @@ slug: "/services/pos-point-of-sale"
 title: "Point of sale"
 sidebarName: "posSidebar"
 ---
+
 The rapidly evolving Point of Sale (POS) market presents an enormous challenge for companies and their customers.
 
 The frequent introduction of new payment solutions, advancements in payment software and the rapid innovation in terminal technology can seem overwhelming. Sonoma recognizes the importance of POS systems to your customers and has developed a comprehensive suite of support and training practices specifically designed to help you and your customers cope with the rapid evolution in the marketplace. We work with you to minimize the effort and costs associated with supporting your applications while ensuring a positive customer experience.

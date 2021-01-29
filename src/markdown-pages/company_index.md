@@ -14,9 +14,9 @@ By utilizing our tools, you will never lose touch with your Customers’. Our te
 
 Why Sonoma:
 
-* History of Success
-* Market Expertise
-* Virtual Model
-* Superior Employees
-* Customizable & Flexible
-* Partner vs. Vendor
+- History of Success
+- Market Expertise
+- Virtual Model
+- Superior Employees
+- Customizable & Flexible
+- Partner vs. Vendor

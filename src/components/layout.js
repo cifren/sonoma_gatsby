@@ -23,23 +23,25 @@ const Layout = ({ children, sidebarName }) => {
 
   return (
     <>
-        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-        <Container className="main">
-            {Sidebar &&
-                <Row>
-                    <Col xs={12} sm={8} md={9} className="mt-4 mb-4">{children}</Col>
-                    <Col xs={12} sm={4} md={3} className="sidebar mb-5">
-                        <Sidebar/>
-                    </Col>
-                </Row>
-            }
-            {!Sidebar &&
-                <Row>
-                    <Col className="mt-4 mb-4">{children}</Col>
-                </Row>
-            }
-        </Container>
-        <Footer />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Container className="main">
+        {Sidebar && (
+          <Row>
+            <Col xs={12} sm={8} md={9} className="mt-4 mb-4">
+              {children}
+            </Col>
+            <Col xs={12} sm={4} md={3} className="sidebar mb-5">
+              <Sidebar />
+            </Col>
+          </Row>
+        )}
+        {!Sidebar && (
+          <Row>
+            <Col className="mt-4 mb-4">{children}</Col>
+          </Row>
+        )}
+      </Container>
+      <Footer />
     </>
   )
 }

@@ -6,7 +6,7 @@ sidebarName: "technologySidebar"
 
 Sonoma’s key strategic advantage is our virtual model. By utilizing the power of the Internet, and with the advent of modern communication and technologies, we are able to operate a geographically dispersed help desk in a highly secure and professional manner.
 
-Sonoma has developed a highly flexible and scalable model for running a virtual technical support centre.  Our model ensures that we are available 24-hours-per-day, every day of the year.
+Sonoma has developed a highly flexible and scalable model for running a virtual technical support centre. Our model ensures that we are available 24-hours-per-day, every day of the year.
 
 Being virtual makes us immune to localized network communication failures as calls are simply routed to employees in unaffected areas -- even during large-scale outages such as brownouts or blackouts.
 

@@ -3,6 +3,7 @@ slug: "/company/careers"
 title: "Careers"
 sidebarName: "companySidebar"
 ---
+
 Sonoma is looking for bright enthusiastic professionals looking to join a highly motivated team who are passionate about delivering excellence in everything we do. The ideal candidate must be a self starter with a strong customer service back ground and possess technical and problem solving skills.
 
 Applicants with experience in the Financial and or Point of Sale markets will be given priority.

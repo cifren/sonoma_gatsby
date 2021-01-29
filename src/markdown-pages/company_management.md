@@ -3,6 +3,7 @@ slug: "/company/management"
 title: "Management"
 sidebarName: "companySidebar"
 ---
+
 **Bill Bews**
 
 As President and founder of Sonoma OnLine Services, Bill is responsible for the day to day operation as well as providing the leadership and strategic direction of the company.

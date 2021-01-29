@@ -22,4 +22,4 @@ const Logo = () => {
   return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
-export default Logo;
+export default Logo
