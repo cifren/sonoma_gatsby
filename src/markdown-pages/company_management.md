@@ -1,6 +1,7 @@
 ---
 slug: "/company/management"
 title: "Management"
+sidebarName: "companySidebar"
 ---
 **Bill Bews**
 
