@@ -1,14 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Carousel, Row, Col } from "react-bootstrap"
-
-import img1 from "../images/company.jpeg"
-import img2 from "../images/building.jpg"
-import img3 from "../images/POS.jpeg"
+import companyPdf from "../pdf/company-overview.pdf"
+import financialServicePdf from "../pdf/financial-services.pdf"
+import posPdf from "../pdf/Point-of-Sale-Services.pdf"
 
 const IndexPage = function(props){
     return <Layout>
@@ -29,7 +27,7 @@ const IndexPage = function(props){
                             <Carousel.Caption className="caption1">
                                 <h1 class="carousel-title">Company Overview</h1>
                                 <p class="carousel-body">Learn more about who we are and how we can help you.</p>
-                                <p><Link className="btn btn-lg btn-primary" to="" role="button">Learn More</Link></p>
+                                <p><Link to="/company" className="btn btn-lg btn-primary" role="button">Learn More</Link></p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>                
@@ -40,7 +38,7 @@ const IndexPage = function(props){
                             <Carousel.Caption className="caption2">
                                 <h1 class="carousel-title">Customer Support</h1>
                                 <p class="carousel-body">We provide a full range of support services</p>
-                                <p><Link className="btn btn-lg btn-primary" to="" role="button">Learn More</Link></p>
+                                <p><Link to="/services/pos-point-of-sale/customer-support" className="btn btn-lg btn-primary" role="button">Learn More</Link></p>
                             </Carousel.Caption>
                         </Carousel.Item>
                         <Carousel.Item>                
@@ -51,7 +49,7 @@ const IndexPage = function(props){
                             <Carousel.Caption className="caption3">
                                 <h1 class="carousel-title">Contact Us Today</h1>
                                 <p class="carousel-body"> For further information</p>
-                                <p><Link class="btn btn-lg btn-primary" to="/contact" role="button">Click Here</Link></p>
+                                <p><Link to="/contact-us" class="btn btn-lg btn-primary" role="button">Click Here</Link></p>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
@@ -62,16 +60,16 @@ const IndexPage = function(props){
                     <Row>
                         <Col> 
                             <div class="home-icone">
-                                <Link to="/contact" rel="alternate">
-                                    <img class="pull-left" src={img1} alt="" width="129" height="129"/>
+                                <Link to="/company" rel="alternate">
+                                    <Img className="pull-left" fixed={props.data.img1.childImageSharp.fixed} alt="company"/>
                                 </Link>
                             </div>
                             <div class="text">
-                                <h1><Link href="/brochures/company-overview.pdf" target="_blank">Company Overview</Link></h1>
+                                <h1><a href={companyPdf} target="_blank">Company Overview</a></h1>
                                 <p>
-                                    <Link href="/brochures/company-overview.pdf" target="_blank">
+                                    <a href={companyPdf} target="_blank">
                                         Providing support had become increasingly difficult and costly. find out how Sonoma can help.
-                                    </Link>
+                                    </a>
                                 </p>
                             </div>
                         </Col>
@@ -82,15 +80,15 @@ const IndexPage = function(props){
                         <Col>
                             <div class="home-icone">
                                 <Link href="/services/financial-services" rel="alternate">
-                                    <img class="pull-left" src={img2} alt="" width="129" height="129"/>
+                                    <Img className="pull-left" fixed={props.data.img2.childImageSharp.fixed} alt="company"/>
                                 </Link>
                             </div>
                             <div class="text">
                                 <h1>
-                                    <Link href="/brochures/financial-services.pdf" target="_blank">Financial Services</Link>
+                                    <a href={financialServicePdf} target="_blank">Financial Services</a>
                                 </h1>
                                 <p>
-                                    <Link href="/brochures/financial-services.pdf" target="_blank">Find out how Sonoma can help you give your customers peace of mind.</Link>
+                                    <a href={financialServicePdf} target="_blank">Find out how Sonoma can help you give your customers peace of mind.</a>
                                 </p>
                             </div>
                         </Col>
@@ -101,17 +99,17 @@ const IndexPage = function(props){
                         <Col class="col-sm-12 col-md-12">
                             <div class="home-icone">
                                 <Link to="/services/pos-point-of-sale" rel="alternate">
-                                    <img class="pull-left magrgin-bottom" src={img3} alt="" width="129" height="129"/>
+                                    <Img className="pull-left" fixed={props.data.img3.childImageSharp.fixed} alt="company"/>
                                 </Link>
                             </div>
                             <div class="text">
                                 <h1>
-                                    <Link href="/brochures/Point-of-Sale-Services.pdf" target="_blank">POS Services</Link>
+                                    <a href={posPdf} target="_blank">POS Services</a>
                                 </h1>
                                 <p>
-                                    <Link href="/brochures/Point-of-Sale-Services.pdf" target="_blank">
+                                    <a href={posPdf} target="_blank">
                                         See how Sonoma's comprehensive suite of training and support practices can help you.
-                                    </Link>
+                                    </a>
                                 </p>
                             </div>
                         </Col>
@@ -144,6 +142,27 @@ export const query = graphql`
             childImageSharp {
                 fluid(maxWidth: 1140, maxHeight: 408) {
                     ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        img1: file(relativePath: { eq: "company.jpeg" } ) {
+            childImageSharp {
+                fixed(width: 129) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        img2: file(relativePath: { eq: "building.jpg" } ) {
+            childImageSharp {
+                fixed(width: 129) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+        img3: file(relativePath: { eq: "POS.jpeg" } ) {
+            childImageSharp {
+                fixed(width: 129) {
+                    ...GatsbyImageSharpFixed
                 }
             }
         }

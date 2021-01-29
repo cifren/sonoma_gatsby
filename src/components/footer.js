@@ -10,55 +10,55 @@ const Footer = function() {
                     <p><strong><Link to="/blog/my-first-post">Company</Link></strong></p>
                     <hr/>
                     <p>
-                        <Link to="">Management</Link>
+                        <Link to="/company/management">Management</Link>
                         <br/>
-                        <Link to="">Carrers</Link>
+                        <Link to="/company/careers">Carrers</Link>
                     </p>
                 </Col>
                 <Col>
                     <p><strong><Link to="">Services</Link></strong></p>
                     <hr/>
                     <p>
-                        <Link to="">Financial Services </Link>
+                        <Link to="/services/financial-services">Financial Services </Link>
                         <br/>
-                        &nbsp; &nbsp;&nbsp;<Link to="">Online Banking</Link>
+                        &nbsp; &nbsp;&nbsp;<Link to="/services/financial-services/online-banking">Online Banking</Link>
                         <br/>
-                        &nbsp; &nbsp;&nbsp;<Link to="">Conversion Services</Link>
+                        &nbsp; &nbsp;&nbsp;<Link to="/services/financial-services/conversion-support">Conversion Services</Link>
                         <br/>
-                        &nbsp; &nbsp;&nbsp;<Link to="">Lost or Stolen Debit Card</Link>
+                        &nbsp; &nbsp;&nbsp;<Link to="/services/financial-services/lost-or-stolen-debit-card">Lost or Stolen Debit Card</Link>
                         <br/>
-                        &nbsp; &nbsp;&nbsp;<Link to="">ATM Support Services</Link>
+                        &nbsp; &nbsp;&nbsp;<Link to="/services/financial-services/atm-support-services">ATM Support Services</Link>
                     </p>
                     <p>
-                        <Link to="">POS (Point of Sales)</Link>
+                        <Link to="/services/pos-point-of-sale">POS (Point of Sales)</Link>
                         <br/>
-                        &nbsp; &nbsp;&nbsp;<Link to="">Customer Services</Link>
+                        &nbsp; &nbsp;&nbsp;<Link to="/services/pos-point-of-sale/customer-support">Customer Services</Link>
                         <br/>
-                        &nbsp; &nbsp;&nbsp;<Link to="">Training Support</Link>
+                        &nbsp; &nbsp;&nbsp;<Link to="/services/pos-point-of-sale/training-services">Training Support</Link>
                         <br/>
-                        &nbsp; &nbsp;&nbsp;<Link to="">Conversions</Link>
+                        &nbsp; &nbsp;&nbsp;<Link to="/services/pos-point-of-sale/conversions">Conversions</Link>
                         <br/>
-                        &nbsp; &nbsp;&nbsp;<Link to="">Supply Management</Link>
-                    </p>
-                </Col>
-                <Col>
-                    <p><strong><Link to="">Technology</Link></strong></p>
-                    <hr/>
-                    <p>
-                        <Link to="">Customer Relation Management</Link>
-                        <br/>
-                        <Link to="">Trouble Ticketing Support</Link>
-                        <br/>
-                        <Link to="">Knowledge Base</Link>
-                        <br/>
-                        <Link to="">Call Routing</Link>
+                        &nbsp; &nbsp;&nbsp;<Link to="/services/pos-point-of-sale/supply-management">Supply Management</Link>
                     </p>
                 </Col>
                 <Col>
-                    <p><strong><Link to="">Contact</Link></strong></p>
+                    <p><strong><Link to="/technology/">Technology</Link></strong></p>
                     <hr/>
                     <p>
-                        <Link to="">Contact Us</Link>
+                        <Link to="/technology/crm-customer-relationship-management">Customer Relation Management</Link>
+                        <br/>
+                        <Link to="/technology/trouble-ticketing-system">Trouble Ticketing Support</Link>
+                        <br/>
+                        <Link to="/technology/knowledge-base">Knowledge Base</Link>
+                        <br/>
+                        <Link to="/technology/call-routing">Call Routing</Link>
+                    </p>
+                </Col>
+                <Col>
+                    <p><strong><Link to="/contact-us">Contact</Link></strong></p>
+                    <hr/>
+                    <p>
+                        <Link to="/contact-us">Contact Us</Link>
                         <br/>
                         <Link to="">Chat</Link>
                     </p>
