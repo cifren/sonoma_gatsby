@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React, {useState} from "react"
-import { Navbar, Nav, Container, Dropdown } from 'react-bootstrap'
+import { Navbar, Nav, Container, Dropdown, Row, Col } from 'react-bootstrap'
 import Logo from "./images/logo"
 import { Link } from "gatsby"
 
@@ -9,9 +9,9 @@ const Header = function({ siteTitle }) {
     return <div class="navbar-default">
         <Container className="navbar-default">
             <Navbar expand="lg">
-            <Navbar.Brand as={Link} to="/">               
+            <Navbar.Brand as={Link} to="/" style={{height: "51px"}}>               
                 <div>
-                    <Logo src="sonoma-logo.png" />
+                    <Logo src="sonoma-logo.png" alt={siteTitle}/>
                 </div>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -24,17 +24,22 @@ const Header = function({ siteTitle }) {
 
                     <LocalDropdown 
                         title="Services" to="/services/">
-                        <Dropdown.Item as={Link} to="/services/financial-services">Financial Services</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/financial-services/online-banking">Online Banking</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/financial-services/conversion-support">Conversion Support</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/financial-services/lost-or-stolen-debit-card">Lost or Stolen Debit Card</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/financial-services/atm-support-services">ATM Support Services</Dropdown.Item>
-                        <Dropdown.Divider />
-                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale">POS (Point of Sale)</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale/customer-support">Customer Support</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale/training-services">Training Services</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale/conversions">Conversions</Dropdown.Item>
-                        <Dropdown.Item as={Link} to="/services/pos-point-of-sale/supply-management">Supply Management</Dropdown.Item>
+                        <Row style={{width: "530px"}}>
+                            <Col>
+                                <Dropdown.Item as={Link} to="/services/financial-services">Financial Services</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/financial-services/online-banking">Online Banking</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/financial-services/conversion-support">Conversion Support</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/financial-services/lost-or-stolen-debit-card">Lost or Stolen Debit Card</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/financial-services/atm-support-services">ATM Support Services</Dropdown.Item>
+                            </Col>                        
+                            <Col>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale">POS (Point of Sale)</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/customer-support">Customer Support</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/training-services">Training Services</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/conversions">Conversions</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/supply-management">Supply Management</Dropdown.Item>
+                            </Col>
+                        </Row>
                     </LocalDropdown>
                     <LocalDropdown 
                         title="Technology" to="/technology/">

@@ -59,7 +59,6 @@ body {
     border-top: 1px solid #ccc;
     box-shadow: 0 11px 7px -10px rgba(0, 0, 0, 0.1) inset, 0 7px 10px -5px rgba(0, 0, 0, 0.1);
     background: none repeat scroll 0 0 #f8f8f8;
-    margin: 0;
     padding: 10px 0;
 }
 
@@ -172,7 +171,7 @@ body {
     float: left;
 }
 
-main {
+.main {
     .content {
         a {
             color: #990000;

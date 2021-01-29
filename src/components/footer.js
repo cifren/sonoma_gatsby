@@ -1,8 +1,10 @@
 import React from "react"
 import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from "gatsby"
+import Chat from "./chat"
 
 const Footer = function() {
+
     return <Container>
         <div>
             <Row className="footer">
@@ -60,7 +62,7 @@ const Footer = function() {
                     <p>
                         <Link to="/contact-us">Contact Us</Link>
                         <br/>
-                        <Link to="">Chat</Link>
+                        <Chat/>
                     </p>
                 </Col>
             </Row>
