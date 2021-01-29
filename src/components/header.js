@@ -27,17 +27,17 @@ const Header = function({ siteTitle }) {
                         <Row style={{width: "530px"}}>
                             <Col>
                                 <Dropdown.Item as={Link} to="/services/financial-services">Financial Services</Dropdown.Item>
-                                <Dropdown.Item as={Link} to="/services/financial-services/online-banking">Online Banking</Dropdown.Item>
-                                <Dropdown.Item as={Link} to="/services/financial-services/conversion-support">Conversion Support</Dropdown.Item>
-                                <Dropdown.Item as={Link} to="/services/financial-services/lost-or-stolen-debit-card">Lost or Stolen Debit Card</Dropdown.Item>
-                                <Dropdown.Item as={Link} to="/services/financial-services/atm-support-services">ATM Support Services</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/financial-services/online-banking">&nbsp;&nbsp;Online Banking</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/financial-services/conversion-support">&nbsp;&nbsp;Conversion Support</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/financial-services/lost-or-stolen-debit-card">&nbsp;&nbsp;Lost or Stolen Debit Card</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/financial-services/atm-support-services">&nbsp;&nbsp;ATM Support Services</Dropdown.Item>
                             </Col>                        
                             <Col>
                                 <Dropdown.Item as={Link} to="/services/pos-point-of-sale">POS (Point of Sale)</Dropdown.Item>
-                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/customer-support">Customer Support</Dropdown.Item>
-                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/training-services">Training Services</Dropdown.Item>
-                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/conversions">Conversions</Dropdown.Item>
-                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/supply-management">Supply Management</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/customer-support">&nbsp;&nbsp;Customer Support</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/training-services">&nbsp;&nbsp;Training Services</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/conversions">&nbsp;&nbsp;Conversions</Dropdown.Item>
+                                <Dropdown.Item as={Link} to="/services/pos-point-of-sale/supply-management">&nbsp;&nbsp;Supply Management</Dropdown.Item>
                             </Col>
                         </Row>
                     </LocalDropdown>
@@ -75,7 +75,7 @@ const LocalDropdown = function({ children, title, to }) {
         navbar={true}
         className="nav-item">
             
-        <Dropdown.Toggle class="nav-link dropdown-toggle" as={Link} to={to}>
+        <Dropdown.Toggle className="nav-link dropdown-toggle" as={Link} to={to}>
             {title}
         </Dropdown.Toggle>
         <Dropdown.Menu>
