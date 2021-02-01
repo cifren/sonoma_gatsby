@@ -25,7 +25,7 @@ const IndexPage = function (props) {
               />
               <Carousel.Caption className="caption1">
                 <h1 class="carousel-title">Company Overview</h1>
-                <p class="carousel-body">
+                <p class="carousel-body d-none d-lg-block">
                   Learn more about who we are and how we can help you.
                 </p>
                 <p>
@@ -46,7 +46,7 @@ const IndexPage = function (props) {
               />
               <Carousel.Caption className="caption2">
                 <h1 class="carousel-title">Customer Support</h1>
-                <p class="carousel-body">
+                <p class="carousel-body d-none d-lg-block">
                   We provide a full range of support services
                 </p>
                 <p>
@@ -67,7 +67,7 @@ const IndexPage = function (props) {
               />
               <Carousel.Caption className="caption3">
                 <h1 class="carousel-title">Contact Us Today</h1>
-                <p class="carousel-body"> For further information</p>
+                <p class="carousel-body d-none d-lg-block"> For further information</p>
                 <p>
                   <Link
                     to="/contact-us"
@@ -83,97 +83,85 @@ const IndexPage = function (props) {
         </Col>
       </Row>
       <Row className="home-links">
-        <Col>
-          <Row>
-            <Col>
-              <div class="home-icone">
-                <Link to="/company" rel="alternate">
-                  <Img
-                    className="pull-left"
-                    fixed={props.data.img1.childImageSharp.fixed}
-                    alt="company"
-                  />
-                </Link>
-              </div>
-              <div class="text">
-                <h1>
-                  <a href={companyPdf} target="_blank" rel="noreferrer">
-                    Company Overview
-                  </a>
-                </h1>
-                <p>
-                  <a href={companyPdf} target="_blank" rel="noreferrer">
-                    Providing support had become increasingly difficult and
-                    costly. find out how Sonoma can help.
-                  </a>
-                </p>
-              </div>
-            </Col>
-          </Row>
+        <Col lg={4} md={12} sm={12}>
+            <div class="home-icone">
+            <Link to="/company" rel="alternate">
+                <Img
+                className="pull-left"
+                fixed={props.data.img1.childImageSharp.fixed}
+                alt="company"
+                />
+            </Link>
+            </div>
+            <div class="text">
+            <h1>
+                <a href={companyPdf} target="_blank" rel="noreferrer">
+                Company Overview
+                </a>
+            </h1>
+            <p>
+                <a href={companyPdf} target="_blank" rel="noreferrer">
+                Providing support had become increasingly difficult and
+                costly. find out how Sonoma can help.
+                </a>
+            </p>
+            </div>
         </Col>
-        <Col>
-          <Row>
-            <Col>
-              <div class="home-icone">
-                <Link href="/services/financial-services" rel="alternate">
-                  <Img
-                    className="pull-left"
-                    fixed={props.data.img2.childImageSharp.fixed}
-                    alt="company"
-                  />
-                </Link>
-              </div>
-              <div class="text">
-                <h1>
-                  <a
-                    href={financialServicePdf}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Financial Services
-                  </a>
-                </h1>
-                <p>
-                  <a
-                    href={financialServicePdf}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Find out how Sonoma can help you give your customers peace
-                    of mind.
-                  </a>
-                </p>
-              </div>
-            </Col>
-          </Row>
+        <Col lg={4} md={12} sm={12}>
+            <div class="home-icone">
+            <Link href="/services/financial-services" rel="alternate">
+                <Img
+                className="pull-left"
+                fixed={props.data.img2.childImageSharp.fixed}
+                alt="company"
+                />
+            </Link>
+            </div>
+            <div class="text">
+            <h1>
+                <a
+                href={financialServicePdf}
+                target="_blank"
+                rel="noreferrer"
+                >
+                Financial Services
+                </a>
+            </h1>
+            <p>
+                <a
+                href={financialServicePdf}
+                target="_blank"
+                rel="noreferrer"
+                >
+                Find out how Sonoma can help you give your customers peace
+                of mind.
+                </a>
+            </p>
+            </div>
         </Col>
-        <Col>
-          <Row>
-            <Col class="col-sm-12 col-md-12">
-              <div class="home-icone">
-                <Link to="/services/pos-point-of-sale" rel="alternate">
-                  <Img
-                    className="pull-left"
-                    fixed={props.data.img3.childImageSharp.fixed}
-                    alt="company"
-                  />
-                </Link>
-              </div>
-              <div class="text">
-                <h1>
-                  <a href={posPdf} target="_blank" rel="noreferrer">
-                    POS Services
-                  </a>
-                </h1>
-                <p>
-                  <a href={posPdf} target="_blank" rel="noreferrer">
-                    See how Sonoma's comprehensive suite of training and support
-                    practices can help you.
-                  </a>
-                </p>
-              </div>
-            </Col>
-          </Row>
+        <Col lg={4} md={12} sm={12}>
+            <div class="home-icone">
+            <Link to="/services/pos-point-of-sale" rel="alternate">
+                <Img
+                className="pull-left"
+                fixed={props.data.img3.childImageSharp.fixed}
+                alt="company"
+                />
+            </Link>
+            </div>
+            <div class="text">
+            <h1>
+                <a href={posPdf} target="_blank" rel="noreferrer">
+                POS Services
+                </a>
+            </h1>
+            <p>
+                <a href={posPdf} target="_blank" rel="noreferrer">
+                See how Sonoma's comprehensive suite of training and support
+                practices can help you.
+                </a>
+            </p>
+            </div>
         </Col>
       </Row>
     </Layout>
