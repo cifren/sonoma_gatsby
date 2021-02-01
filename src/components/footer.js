@@ -18,7 +18,7 @@ const Footer = function () {
             <p>
               <Link to="/company/management">Management</Link>
               <br />
-              <Link to="/company/careers">Carrers</Link>
+              <Link to="/company/careers">Careers</Link>
             </p>
           </Col>
           <Col>

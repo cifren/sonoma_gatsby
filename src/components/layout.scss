@@ -12,7 +12,6 @@ $container-max-width: 1170px;
 $hr-border-width: 3px;
 $hr-border-color: black;
 $font-weight-bolder: bold;
-$font-size-base: 13;
 $font-family-base: Verdana, Arial, Helvetica, sans-serif;
 
 $theme-colors: (
@@ -29,6 +28,10 @@ a {
     background: -o-linear-gradient(to top,#4d80af 0,#2b5593 100%);
     background: linear-gradient(to top,#4d80af 0,#2b5593 100%);
     background: -ms-linear-gradient(to top,#4d80af 0,#2b5593 100%);
+    font-size: 14px;
+}
+
+.navbar-default a {
     font-size: 14px;
 }
 
@@ -54,6 +57,7 @@ body {
     box-shadow: 0 11px 7px -10px rgba(0, 0, 0, 0.1) inset, 0 7px 10px -5px rgba(0, 0, 0, 0.1);
     background: none repeat scroll 0 0 #f8f8f8;
     padding: 10px 0;
+    font-size: 0.75rem;
 }
 
 .footer a {
@@ -100,6 +104,11 @@ body {
     text-shadow: none;
 }
 
+.caption1 h1, .caption2 h1, .caption3 h1 {
+    font-size: 2.2rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .caption1 p {
     color: #444;
 }
@@ -128,6 +137,7 @@ body {
     box-shadow: 0 11px 7px -10px rgb(0 0 0 / 10%) inset, 0 7px 10px -5px rgb(0 0 0 / 10%);
     background-color: #f8f8f8;
     margin-top: 14px;
+    font-size: 0.7rem;
     
     a {
         color: black;
@@ -167,12 +177,21 @@ body {
 
 .main {
     .content {
+        min-height: 500px;
         a {
             color: #990000;
         }
-
+        
         h1 {
             color: #990000;
+            border-bottom: solid 1.5px black;
+            display: inline-block;
+            padding-right: 77px;
+            font-size: 19px;
+            font-weight: bold;
+            padding-bottom: 20px;
+            padding-top: 10px;
+            margin: 0 0 20px 0;
         }
     }
 

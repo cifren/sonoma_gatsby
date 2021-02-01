@@ -9,7 +9,7 @@ const Header = function ({ siteTitle }) {
     <div class="navbar-default">
       <Container className="navbar-default">
         <Navbar expand="lg">
-          <Navbar.Brand as={Link} to="/" style={{ height: "51px" }}>
+          <Navbar.Brand as={Link} to="/" style={{ height: "57px" }}>
             <div>
               <Logo src="sonoma-logo.png" alt={siteTitle} />
             </div>
@@ -27,7 +27,7 @@ const Header = function ({ siteTitle }) {
               </LocalDropdown>
 
               <LocalDropdown title="Services" to="/services/">
-                <Row style={{ width: "530px" }}>
+                <Row style={{ width: "630px" }}>
                   <Col>
                     <Dropdown.Item as={Link} to="/services/financial-services">
                       Financial Services

@@ -11,9 +11,10 @@ export default function Template({
   return (
     <Layout sidebarName={frontmatter.sidebarName}>
       <SEO title={frontmatter.title} />
-      <div className="content">
-        <h1>{frontmatter.title}</h1>
-        <hr />
+      <div className="content">         
+        <h1>
+            <span>{frontmatter.title.toUpperCase()}</span> 
+        </h1>
         <div
           className="post-content"
           dangerouslySetInnerHTML={{ __html: html }}
