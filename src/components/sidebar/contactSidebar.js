@@ -2,9 +2,7 @@ import React from "react"
 
 const ContactSidebar = function () {
   return (
-    <div 
-        class="text-center py-5" 
-        style={{ fontSize: "0.7rem" }}>
+    <div class="text-center py-5" style={{ fontSize: "0.7rem" }}>
       <p>Sonoma Technical Support Services</p>
       <p>•••••••••••••••••••••••••••</p>
       <p>

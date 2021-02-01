@@ -11,9 +11,9 @@ export default function Template({
   return (
     <Layout sidebarName={frontmatter.sidebarName}>
       <SEO title={frontmatter.title} />
-      <div className="content">         
+      <div className="content">
         <h1>
-            <span>{frontmatter.title.toUpperCase()}</span> 
+          <span>{frontmatter.title.toUpperCase()}</span>
         </h1>
         <div
           className="post-content"
