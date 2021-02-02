@@ -14,7 +14,7 @@ Prior to founding Sonoma, Mr. Bews served as the VP of Operations at eStation, a
 
 **William E. Mardis**
 
-As head of sales for the USA, Bill is responsible for driving both sales and awareness of Sonoma in the Point of Sale market. .Mr. Mardis is an accomplished and successful sales and business professional with more than 25 years of experience in the point of sale and electronic financial transaction industry.
+As head of sales for the USA, Bill is responsible for driving both sales and awareness of Sonoma in the Point of Sale market. Mr. Mardis is an accomplished and successful sales and business professional with more than 25 years of experience in the point of sale and electronic financial transaction industry.
 
 Prior to joining Sonoma Mr. Mardis served as Vice President, Operations and Marketing for PointPay USA, where he managed the outsourcing of terminal management services, the companies marketing strategies and execution and the companies value added channel. While Vice President of Value Added Services at Hypercom Corporation, he managed two business channels and spearheading efforts to define and launch new service-based, recurring revenue programs for the company.
 
