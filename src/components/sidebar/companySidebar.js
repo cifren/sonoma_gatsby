@@ -29,7 +29,7 @@ const CompanySidebar = function () {
       image: query.img1.childImageSharp.fixed,
     },
     {
-      title: "Career",
+      title: "Careers",
       linkTo: "/company/careers",
       image: query.img2.childImageSharp.fixed,
     },
